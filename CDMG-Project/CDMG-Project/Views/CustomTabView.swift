@@ -82,7 +82,7 @@ class CustomTabView: UIView {
         let itemTitleLabel = UILabel()
         itemTitleLabel.text = item.displayTitle
         itemTitleLabel.textAlignment = .center
-        itemTitleLabel.font = UIFont.boldSystemFont(ofSize: 14)
+        itemTitleLabel.font = Fonts.getFontStyle(style: .font_roboto_regular)
         itemTitleLabel.textColor = .darkText
         itemTitleLabel.numberOfLines = 0
 
@@ -124,7 +124,7 @@ class CustomTabView: UIView {
                 
                 make.top.equalTo(itemImageView.snp.bottom).offset(4)
                 make.leading.trailing.equalToSuperview()
-                make.bottom.greaterThanOrEqualToSuperview().inset(8)
+                make.bottom.equalToSuperview().inset(8)
                 
             }
             
@@ -148,7 +148,7 @@ class CustomTabView: UIView {
                 
                 make.top.equalTo(itemImageView.snp.bottom).offset(4)
                 make.leading.trailing.equalToSuperview()
-                make.bottom.greaterThanOrEqualToSuperview().inset(8)
+                make.bottom.equalToSuperview().inset(8)
                 
             }
             
