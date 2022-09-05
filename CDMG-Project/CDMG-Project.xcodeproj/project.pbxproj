@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B9EA2BA70DA75D9F65DF5F87 /* Pods_CDMG_Project.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4276F1CC37A5ABBCE620D4E1 /* Pods_CDMG_Project.framework */; };
 		E9C7E8C628C5CB85002E5002 /* CustomTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C7E8C528C5CB85002E5002 /* CustomTabView.swift */; };
 		E9CA454128C5ADFC0065C373 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9CA454028C5ADFC0065C373 /* AppDelegate.swift */; };
 		E9CA454328C5ADFC0065C373 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9CA454228C5ADFC0065C373 /* SceneDelegate.swift */; };
@@ -17,6 +18,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4276F1CC37A5ABBCE620D4E1 /* Pods_CDMG_Project.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CDMG_Project.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A51816FA01ADD1061E9D836 /* Pods-CDMG-Project.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CDMG-Project.release.xcconfig"; path = "Target Support Files/Pods-CDMG-Project/Pods-CDMG-Project.release.xcconfig"; sourceTree = "<group>"; };
+		AA79E585EBEEE1AC1FEAD8DC /* Pods-CDMG-Project.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CDMG-Project.debug.xcconfig"; path = "Target Support Files/Pods-CDMG-Project/Pods-CDMG-Project.debug.xcconfig"; sourceTree = "<group>"; };
 		E9C7E8C528C5CB85002E5002 /* CustomTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabView.swift; sourceTree = "<group>"; };
 		E9CA453D28C5ADFC0065C373 /* CDMG-Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CDMG-Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9CA454028C5ADFC0065C373 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -33,17 +37,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B9EA2BA70DA75D9F65DF5F87 /* Pods_CDMG_Project.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		054884E8ABD6570FEF0B829D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AA79E585EBEEE1AC1FEAD8DC /* Pods-CDMG-Project.debug.xcconfig */,
+				9A51816FA01ADD1061E9D836 /* Pods-CDMG-Project.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		B22A49B3FBE410BD9E8439F6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4276F1CC37A5ABBCE620D4E1 /* Pods_CDMG_Project.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E9CA453428C5ADFC0065C373 = {
 			isa = PBXGroup;
 			children = (
 				E9CA453F28C5ADFC0065C373 /* CDMG-Project */,
 				E9CA453E28C5ADFC0065C373 /* Products */,
+				054884E8ABD6570FEF0B829D /* Pods */,
+				B22A49B3FBE410BD9E8439F6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -149,9 +174,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E9CA455128C5ADFE0065C373 /* Build configuration list for PBXNativeTarget "CDMG-Project" */;
 			buildPhases = (
+				9FF3F411DEF7CDE1BDA38DF4 /* [CP] Check Pods Manifest.lock */,
 				E9CA453928C5ADFC0065C373 /* Sources */,
 				E9CA453A28C5ADFC0065C373 /* Frameworks */,
 				E9CA453B28C5ADFC0065C373 /* Resources */,
+				BCC8DA4F18D60F02831EF082 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -206,6 +233,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9FF3F411DEF7CDE1BDA38DF4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CDMG-Project-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BCC8DA4F18D60F02831EF082 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CDMG-Project/Pods-CDMG-Project-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CDMG-Project/Pods-CDMG-Project-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CDMG-Project/Pods-CDMG-Project-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E9CA453928C5ADFC0065C373 /* Sources */ = {
@@ -350,6 +419,7 @@
 		};
 		E9CA455228C5ADFE0065C373 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AA79E585EBEEE1AC1FEAD8DC /* Pods-CDMG-Project.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -377,6 +447,7 @@
 		};
 		E9CA455328C5ADFE0065C373 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9A51816FA01ADD1061E9D836 /* Pods-CDMG-Project.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
