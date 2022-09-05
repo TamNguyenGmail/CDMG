@@ -12,6 +12,7 @@
 		E9CA454A28C5ADFE0065C373 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9CA454928C5ADFE0065C373 /* Assets.xcassets */; };
 		E9CA454D28C5ADFE0065C373 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9CA454B28C5ADFE0065C373 /* LaunchScreen.storyboard */; };
 		E9CA456428C5B04D0065C373 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9CA456328C5B04D0065C373 /* BaseViewController.swift */; };
+		E9CA456728C5B3B60065C373 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9CA456628C5B3B60065C373 /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		E9CA454C28C5ADFE0065C373 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E9CA454E28C5ADFE0065C373 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E9CA456328C5B04D0065C373 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		E9CA456628C5B3B60065C373 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +84,7 @@
 		E9CA455628C5AEFB0065C373 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				E9CA456528C5B3670065C373 /* HomeViewController */,
 				E9CA456228C5B0280065C373 /* BaseViewControllers */,
 			);
 			path = ViewControllers;
@@ -126,6 +129,14 @@
 				E9CA456328C5B04D0065C373 /* BaseViewController.swift */,
 			);
 			path = BaseViewControllers;
+			sourceTree = "<group>";
+		};
+		E9CA456528C5B3670065C373 /* HomeViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E9CA456628C5B3B60065C373 /* HomeViewController.swift */,
+			);
+			path = HomeViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -201,6 +212,7 @@
 				E9CA454128C5ADFC0065C373 /* AppDelegate.swift in Sources */,
 				E9CA454328C5ADFC0065C373 /* SceneDelegate.swift in Sources */,
 				E9CA456428C5B04D0065C373 /* BaseViewController.swift in Sources */,
+				E9CA456728C5B3B60065C373 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
