@@ -9,6 +9,13 @@
 /* Begin PBXBuildFile section */
 		B9EA2BA70DA75D9F65DF5F87 /* Pods_CDMG_Project.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4276F1CC37A5ABBCE620D4E1 /* Pods_CDMG_Project.framework */; };
 		E9C7E8C628C5CB85002E5002 /* CustomTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C7E8C528C5CB85002E5002 /* CustomTabView.swift */; };
+		E9C7E8C828C5CDC2002E5002 /* BaseTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C7E8C728C5CDC2002E5002 /* BaseTabBarController.swift */; };
+		E9C7E8CB28C5CF84002E5002 /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C7E8CA28C5CF84002E5002 /* NotificationViewController.swift */; };
+		E9C7E8CE28C5CFC5002E5002 /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C7E8CD28C5CFC5002E5002 /* NewsViewController.swift */; };
+		E9C7E8D128C5CFF1002E5002 /* UlityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C7E8D028C5CFF1002E5002 /* UlityViewController.swift */; };
+		E9C7E8D428C5D014002E5002 /* BlogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C7E8D328C5D014002E5002 /* BlogViewController.swift */; };
+		E9C7E8D728C5D746002E5002 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C7E8D628C5D746002E5002 /* Colors.swift */; };
+		E9C7E8DA28C5DDBA002E5002 /* UIImage + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C7E8D928C5DDBA002E5002 /* UIImage + Extension.swift */; };
 		E9CA454128C5ADFC0065C373 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9CA454028C5ADFC0065C373 /* AppDelegate.swift */; };
 		E9CA454328C5ADFC0065C373 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9CA454228C5ADFC0065C373 /* SceneDelegate.swift */; };
 		E9CA454A28C5ADFE0065C373 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9CA454928C5ADFE0065C373 /* Assets.xcassets */; };
@@ -22,6 +29,13 @@
 		9A51816FA01ADD1061E9D836 /* Pods-CDMG-Project.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CDMG-Project.release.xcconfig"; path = "Target Support Files/Pods-CDMG-Project/Pods-CDMG-Project.release.xcconfig"; sourceTree = "<group>"; };
 		AA79E585EBEEE1AC1FEAD8DC /* Pods-CDMG-Project.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CDMG-Project.debug.xcconfig"; path = "Target Support Files/Pods-CDMG-Project/Pods-CDMG-Project.debug.xcconfig"; sourceTree = "<group>"; };
 		E9C7E8C528C5CB85002E5002 /* CustomTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabView.swift; sourceTree = "<group>"; };
+		E9C7E8C728C5CDC2002E5002 /* BaseTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTabBarController.swift; sourceTree = "<group>"; };
+		E9C7E8CA28C5CF84002E5002 /* NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
+		E9C7E8CD28C5CFC5002E5002 /* NewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
+		E9C7E8D028C5CFF1002E5002 /* UlityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UlityViewController.swift; sourceTree = "<group>"; };
+		E9C7E8D328C5D014002E5002 /* BlogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlogViewController.swift; sourceTree = "<group>"; };
+		E9C7E8D628C5D746002E5002 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		E9C7E8D928C5DDBA002E5002 /* UIImage + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage + Extension.swift"; sourceTree = "<group>"; };
 		E9CA453D28C5ADFC0065C373 /* CDMG-Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CDMG-Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9CA454028C5ADFC0065C373 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E9CA454228C5ADFC0065C373 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -50,7 +64,6 @@
 				AA79E585EBEEE1AC1FEAD8DC /* Pods-CDMG-Project.debug.xcconfig */,
 				9A51816FA01ADD1061E9D836 /* Pods-CDMG-Project.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -60,6 +73,46 @@
 				4276F1CC37A5ABBCE620D4E1 /* Pods_CDMG_Project.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E9C7E8C928C5CF59002E5002 /* NotificationViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E9C7E8CA28C5CF84002E5002 /* NotificationViewController.swift */,
+			);
+			path = NotificationViewController;
+			sourceTree = "<group>";
+		};
+		E9C7E8CC28C5CFA7002E5002 /* NewsViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E9C7E8CD28C5CFC5002E5002 /* NewsViewController.swift */,
+			);
+			path = NewsViewController;
+			sourceTree = "<group>";
+		};
+		E9C7E8CF28C5CFD3002E5002 /* UlityViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E9C7E8D028C5CFF1002E5002 /* UlityViewController.swift */,
+			);
+			path = UlityViewController;
+			sourceTree = "<group>";
+		};
+		E9C7E8D228C5CFFD002E5002 /* BlogViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E9C7E8D328C5D014002E5002 /* BlogViewController.swift */,
+			);
+			path = BlogViewController;
+			sourceTree = "<group>";
+		};
+		E9C7E8D828C5DDA0002E5002 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E9C7E8D928C5DDBA002E5002 /* UIImage + Extension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		E9CA453428C5ADFC0065C373 = {
@@ -97,6 +150,7 @@
 		E9CA455428C5AED20065C373 /* Ulities */ = {
 			isa = PBXGroup;
 			children = (
+				E9C7E8D828C5DDA0002E5002 /* Extensions */,
 			);
 			path = Ulities;
 			sourceTree = "<group>";
@@ -112,6 +166,10 @@
 		E9CA455628C5AEFB0065C373 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				E9C7E8D228C5CFFD002E5002 /* BlogViewController */,
+				E9C7E8CF28C5CFD3002E5002 /* UlityViewController */,
+				E9C7E8CC28C5CFA7002E5002 /* NewsViewController */,
+				E9C7E8C928C5CF59002E5002 /* NotificationViewController */,
 				E9CA456528C5B3670065C373 /* HomeViewController */,
 				E9CA456228C5B0280065C373 /* BaseViewControllers */,
 			);
@@ -147,6 +205,7 @@
 				E9CA454E28C5ADFE0065C373 /* Info.plist */,
 				E9CA454928C5ADFE0065C373 /* Assets.xcassets */,
 				E9CA454B28C5ADFE0065C373 /* LaunchScreen.storyboard */,
+				E9C7E8D628C5D746002E5002 /* Colors.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -155,6 +214,7 @@
 			isa = PBXGroup;
 			children = (
 				E9CA456328C5B04D0065C373 /* BaseViewController.swift */,
+				E9C7E8C728C5CDC2002E5002 /* BaseTabBarController.swift */,
 			);
 			path = BaseViewControllers;
 			sourceTree = "<group>";
@@ -282,10 +342,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				E9CA454128C5ADFC0065C373 /* AppDelegate.swift in Sources */,
+				E9C7E8D728C5D746002E5002 /* Colors.swift in Sources */,
 				E9CA454328C5ADFC0065C373 /* SceneDelegate.swift in Sources */,
+				E9C7E8C828C5CDC2002E5002 /* BaseTabBarController.swift in Sources */,
+				E9C7E8CB28C5CF84002E5002 /* NotificationViewController.swift in Sources */,
+				E9C7E8DA28C5DDBA002E5002 /* UIImage + Extension.swift in Sources */,
 				E9C7E8C628C5CB85002E5002 /* CustomTabView.swift in Sources */,
 				E9CA456428C5B04D0065C373 /* BaseViewController.swift in Sources */,
+				E9C7E8D428C5D014002E5002 /* BlogViewController.swift in Sources */,
 				E9CA456728C5B3B60065C373 /* HomeViewController.swift in Sources */,
+				E9C7E8CE28C5CFC5002E5002 /* NewsViewController.swift in Sources */,
+				E9C7E8D128C5CFF1002E5002 /* UlityViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
